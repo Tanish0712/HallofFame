@@ -26,7 +26,7 @@ SECRET_KEY = 'h8_7npvn1ymmvkup4j-)l1)g@hn2s8h(@lg_ebvc2=chg@i0h-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['warm-everglades-30509.herokuapp.com','hofvidz.com','www.hofvidz.com']
+ALLOWED_HOSTS = ['https://ancient-ridge-15559.herokuapp.com','hallofvidz.com','www.hallofvidz.com']
 
 
 LOGIN_URL = 'login'
