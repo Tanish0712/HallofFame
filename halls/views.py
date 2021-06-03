@@ -14,7 +14,7 @@ import requests
 
 
 
-YOUTUBE_API_KEY = 'AIzaSyChoUppl_PyXdx1FZzWVgrHxQcgFTzbxl0'
+YOUTUBE_API_KEY = 'AIzaSyDn06R0wMHqtUkkkt-vuUUZoLHhB-m9sQU'
 
 def home(request):
     recent_halls = Hall.objects.all().order_by('-id')[:3]
