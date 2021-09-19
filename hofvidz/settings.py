@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'h8_7npvn1ymmvkup4j-)l1)g@hn2s8h(@lg_ebvc2=chg@i0h-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://ancient-ridge-15559.herokuapp.com','hallofvidz.com','www.hallofvidz.com']
+ALLOWED_HOSTS = []
 
 
 LOGIN_URL = 'login'
@@ -83,7 +83,10 @@ WSGI_APPLICATION = 'hofvidz.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 
